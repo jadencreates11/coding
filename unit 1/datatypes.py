@@ -27,7 +27,7 @@ false
 
 ""
 "abc"
-# Variable - a cintainer for data
+# Variable - a container for data
 # to create a variable we first give it a name,
 #then we assign it a value
 
