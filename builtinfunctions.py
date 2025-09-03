@@ -8,3 +8,6 @@
 transfer = 50
 bank = 12.00
 print(float(transfer) + bank)
+time = input('Good morning')
+print('the current time is'+ time)
+print
