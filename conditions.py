@@ -1,16 +1,5 @@
 
-down = input("what down is it?")
-yards = input("how many yards do you need to get another first down")
 
-if down == 3 and yards == 2:
-    print("run the ball")
-elif down == 2 and yards < 0:
-    print('pass the ball')
-elif down ==3 and yards ==6:
-    print('run the ball')
-
-else: #this is the exit, assumes it is 4th down
-    print("punt")
 
 def permintCheck(age):
    if age >= 16:
@@ -18,4 +7,29 @@ def permintCheck(age):
    else:
     print("not allowed to get permint")
 
+def weather():
+   weather = input("what is the weather like today")
+   if weather == "sunny":
+      print("its is beautiful outside, bring glasses")
+   elif weather == 'rainy':
+      print("bring umbrella")
+   else:
+      print("im not sure")
 
+def numbercheck(number):
+   if number >= 0:
+      print ("this is a postive")
+   else:
+      print("this is a negative")
+
+def gradecheck(grade):
+   if grade >=90:
+      print("your grade is an A")
+   elif grade >=80:
+      print("you have a B")
+   elif grade >=70:
+      print("your grade is a C")
+   else:
+      print("you have an F")
+
+gradecheck(69)
