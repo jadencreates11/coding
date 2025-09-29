@@ -20,8 +20,8 @@
 10.0
 10.0000001232
 # Boolean - values that represnt true or false
-true
-false
+"true"
+"false"
 1
 0
 
@@ -31,4 +31,4 @@ false
 # to create a variable we first give it a name,
 #then we assign it a value
 
-SchoolName=boyslatin
+SchoolName="boyslatin"
