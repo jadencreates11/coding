@@ -26,7 +26,8 @@ if selection == 1:
         ("sorry I dont understand")
     if selection == 2:
         print("sorry we are out of turkey sandwiches")
-    sandwichSchore1
+    
+
 
     def atm():
         balance = 2000
@@ -46,3 +47,17 @@ if selection == 1:
                 else:
                     newBalance = balance - amount
                     print("your new balance is :" + str(newBalance))
+                    if selection ==2:
+                        amount = int(input("how much would you like to deposit"))
+                newBalance= balance + amount
+                print("you are adding" + str(amount))
+                print("your new balance is" + str(newBalance))
+                if selection ==3:
+                    print("your balnce is"+ str(balance))
+                else:
+                    print("sorry I dont understand your selection")
+
+
+
+#python lists = a way to organize data, regardless of data tyoe.
+#write the data you want in your list in the square brackets
