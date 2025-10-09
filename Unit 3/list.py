@@ -6,7 +6,7 @@
 # assign it to the square brackets [].
 shoppinglist = ["apples", "oranges", "water", 1,2,3, True, ["bread", "milk"]]
 
-print(shoppinglist)
+print()
 
 #if we ant to access an item from a list, we use the index systems.
 # we write thwe list variable name, and then use the brackets and pass in the
@@ -14,7 +14,7 @@ print(shoppinglist)
 
 # List are zero based indexed; meaning the lsit count always starts at zero(0)
 
-print(shoppinglist[2])
+print()
 trunkparty = ["laptop", "tv", "fridge"]
 
 def addItemForCollage(list):
@@ -22,4 +22,12 @@ def addItemForCollage(list):
     list.append(newItem)
 
     def removeItemFromList(list):
+        Cart = ["food", "juice", 'crayon']
         item =input("please type what to remove")
+        Cart.remove(item)
+numeberlist = [100, 23, 450, 63, 1, 6, 19, 1000]
+def numberlist(NewNumber):
+ numeberlist.append(NewNumber)
+ print(numeberlist)
+
+numeberlist(60)
