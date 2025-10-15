@@ -4,7 +4,7 @@ def Votecheck(age):
     else:
         print("sorry, you are not allowed to vote yet")
 
-def TicketCheck(age):
+def TicketCheck():
     if age <= 13:
         print("ticket is 10.00")
     elif age >= 14 and age <25:
@@ -22,4 +22,5 @@ def maxnumber():
     c = int(input("please enter your third numer"))
     hinumber = max(a,b,c)
 
-    print(hinumber)
+    print()
+

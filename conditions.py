@@ -15,6 +15,7 @@ def weather():
       print("bring umbrella")
    else:
       print("im not sure")
+   
 
 def numbercheck(number):
    if number >= 0:
@@ -32,4 +33,4 @@ def gradecheck(grade):
    else:
       print("you have an F")
 
-gradecheck(69)
+gradecheck()
