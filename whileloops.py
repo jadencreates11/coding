@@ -34,5 +34,10 @@ number = 30
 while number > 0:
     number -= 1
     print(number)
-else:
-    print("done counting")
+#else:
+    #print("done counting")
+
+number = 0
+while number < 10000:
+    number += 1
+    print (number)
