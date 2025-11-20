@@ -9,3 +9,23 @@
 "inform them that the game has started and give them the option of RPS"
 "computer makes a random selection"
 "inform the player if they have lost, won, or tied"
+
+def rpsGame():
+    rpsoptions_cpu = ["rock", "paper", "scissors"]
+    print("Welcome to RPS GAME")
+    print("please select P for rule and P to start game")
+    selection = input()
+    if selection == "r":
+        print("here are the game rulea...")
+    elif selection == "p":
+        print("The game is starting")
+        choice = input("please make a selection, r = rock, p = paper, s = scissors ")
+        ChoiceCpu = random.choice(rpsoptions_cpu)
+        print("user selected " + choice)
+        print ("cpu selected" + ChoiceCpu)
+    else:
+        print("sorry I don't understand")
+
+rpsGame()
+
+
