@@ -18,14 +18,4 @@ def rpsGame():
     if selection == "r":
         print("here are the game rulea...")
     elif selection == "p":
-        print("The game is starting")
-        choice = input("please make a selection, r = rock, p = paper, s = scissors ")
-        ChoiceCpu = random.choice(rpsoptions_cpu)
-        print("user selected " + choice)
-        print ("cpu selected" + ChoiceCpu)
-    else:
-        print("sorry I don't understand")
-
-rpsGame()
-
-
+        print("here")
