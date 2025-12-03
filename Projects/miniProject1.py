@@ -1,7 +1,18 @@
-def quiz():
- quiz = ["Q1", "Q2", "Q3", "Q4", "Q5"]
- print("welcome to your quiz")
- print("Please type your name to begin")
-Name = input()
-if Name == "Jaden Hart":
- print("Your test will now begin")
+def quizanswers():
+    print("welcome to your quiz")
+    quiz = [ 1+1 , 2+2 , 3+3 , 4+4, 5+5]
+    answer = []
+    answer = input("type your answer please")
+    while answer != "quit":
+        question = int(answer)
+        quiz.append(question)
+        print(quiz)
+        answer = input("type in a answer")
+        if input == 2:
+            print("correct")
+    else:
+        x = sum(answer)
+        print(x)
+
+
+quizanswers()
