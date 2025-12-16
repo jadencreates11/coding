@@ -1,31 +1,25 @@
 
-def Calculator():
-    print("What subject is this for")
+def gpaCalculator():
+    print(' What subject is this GPA for? ')
     subject = input()
-    print(" This Subject is" + subject)
-    gradelist = []
-    week = 1 
-    print("What is the grade number for this week" + str(week))
-    gradenumber = input("WHat is the grade for this week")
-    while gradenumber != "Overall":
-         grade = int(gradenumber)
-         gradelist.append(grade)
-         print(gradelist)
-         gradenumber = input("type in the grade for next week")
+    print("the user entered: "+ subject)
+    week = 1
+    sum = 0
+    for x in range (17):
+        print('Please enter the grade for week : ' + str(week))
+        grade = int(input())
+        sum += grade
+        week += 1
+        gpa = sum / 17
+    if gpa > 70 and gpa < 80:
+        print('C')
+    elif gpa > 80  and gpa < 90:
+        print('B')
+    elif gpa > 90  and gpa <100:
+        print('A')
     else:
-          x = sum(gradelist)
-          print(x / 17)
-    if grade >=90:
-      print("your grade is an A")
-    elif grade >=80:
-      print("you have a B")
-    elif grade >=70:
-      print("your grade is a C")
-    elif grade >= 60:
-       print("you have a D")
-    else:
-      print("you have an F")
+        print('F')
+    print('your gpa for '+ subject + ' is ' + str(gpa))
 
+gpaCalculator()
 
-
-Calculator()
