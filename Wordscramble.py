@@ -1,0 +1,35 @@
+import random
+
+
+def scramblewordgame():
+    point = 0
+    wordpool = ["Philadelpha", "North Carolina", "congregate", "funtion"]
+    print("welcome to word scramble")
+    randomwordselect = random.randint(0,3)
+    correctword = ""
+    if randomwordselect == 0:
+        print (wordpool[0])
+        correctword = wordpool[0]
+    elif randomwordselect == 1:
+        print(wordpool[1])
+        correctword = wordpool[1]
+    elif randomwordselect == 2:
+        print(wordpool[2])
+        correctword = wordpool[2]
+    elif randomwordselect == 3:
+        print(wordpool[3])
+        correctword = wordpool[3]
+
+    convertedselection = list(correctword)
+    random.shuffle(convertedselection)
+    scrambled = "".join(convertedselection)
+    print("guess the correct word" + scrambled)
+    userGuess = input()
+    if userGuess == correctword:
+        print("this is correct")
+    else:
+        print("this is wrong")
+
+    print(convertedselection)
+
+scramblewordgame()
