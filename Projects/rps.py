@@ -19,3 +19,4 @@ def rpsGame():
         print("here are the game rulea...")
     elif selection == "p":
         print("here")
+rpsGame()
